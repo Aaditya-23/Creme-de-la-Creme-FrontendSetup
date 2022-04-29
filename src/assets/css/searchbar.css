@@ -1,0 +1,40 @@
+.layer1 {
+  padding: 10px;
+  width: calc(80vw - 20px);
+  max-width: calc(5in - 10px);
+  min-width: 2.5in;
+  height: clamp(1cm, 4vh, 1.3cm);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #159957;
+  background: -webkit-linear-gradient(to left top, #155799, #159957);
+  background: linear-gradient(to left top, #155799, #159957);
+}
+
+.searchbar-input {
+  font-family: inherit;
+  width: 85%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.012em;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.searchbar-input:focus {
+  outline: none;
+}
+
+.searchbar-submit {
+  width: 10%;
+  min-width: 1cm;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--fireBush);
+}
+
+.searchbar-submit i {
+  color: black;
+}

@@ -1,0 +1,115 @@
+.landingpage .navbar {
+  position: sticky;
+  top: 0;
+}
+
+.div1 {
+  margin: 1cm 0;
+}
+
+.text {
+  margin: 1cm 0.1cm;
+  text-align: end;
+  text-transform: capitalize;
+  font-size: clamp(1.2rem, 2.5vmax, 3rem);
+  font-weight: 600;
+}
+
+.searchbar-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.div2 {
+  margin: 1cm 0;
+}
+
+.courses {
+  border-radius: 10px;
+  display: flex;
+  background: #159957;
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  background: linear-gradient(to right, #155799, #159957);
+  padding: 0.5cm 0;
+}
+
+.course-flexbox {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.15cm 0 0.15cm;
+  transition: 0.3s ease-in-out;
+}
+
+.course-flexbox:hover {
+  flex: 3 0.5;
+}
+
+.course-flexbox img {
+  max-width: 100%;
+}
+
+.div3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1cm;
+}
+
+/* TODO style to-signup link */
+.to-signup {
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  width: 30%;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  background: #159957;
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  background: linear-gradient(to right, #155799, #159957);
+}
+
+.description {
+  width: 60%;
+  text-align: justify;
+}
+
+.div4 {
+  display: flex;
+  background-color: black;
+}
+
+.partition-1 {
+  background-color: black;
+  text-align: center;
+}
+
+.partition-1 img {
+  height: 40vh;
+  width: 100%;
+}
+
+.partition-1,
+.partition-2 {
+  flex: 1 1 100%;
+}
+
+.to-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  background: #159957;
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  background: linear-gradient(to right, #155799, #159957);
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+:root {
+  --grayNurse: #f6f7f6;
+  --summerGreen: #a1bab0;
+  --fadedJade: #497b7b;
+  --fireBush: #e49f3a;
+  --shark: #2e3031;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--grayNurse);
+  font-family: "Titillium Web", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+select {
+  border: none;
+}
+
+select:focus {
+  outline: none;
+}

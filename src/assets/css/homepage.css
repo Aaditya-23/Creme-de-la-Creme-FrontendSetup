@@ -1,0 +1,152 @@
+.homepage {
+  min-height: 100vh;
+  background: linear-gradient(to right, #155799, #159957);
+  min-width: 270px;
+}
+
+.courses-container {
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+  gap: 1cm;
+  padding: 10px 20px;
+}
+
+.course {
+  min-height: 2.5in;
+  width: calc(100%-20px);
+  display: flex;
+  gap: 0.3cm;
+  color: white;
+  padding: 5px 10px;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+}
+
+.course-img {
+  min-height: 2.5in;
+  height: 30vw;
+  max-height: 2.8in;
+  width: 25vw;
+}
+
+.crse-content {
+  flex-grow: 1;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.f1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crse-name {
+  font-size: 1.3rem;
+}
+
+.f2 {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  text-transform: none;
+}
+
+.org-logo {
+  height: 1cm;
+  width: 1cm;
+}
+
+.f3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crse-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+  color: var(--fireBush);
+}
+
+.crse-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+}
+
+.f4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crse-type {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+}
+
+.crse-fee {
+  color: var(--fireBush);
+}
+
+.crse-certificate {
+  display: flex;
+  align-items: center;
+  gap: 0.2cm;
+}
+
+.crse-extras {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crse-links {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to left, #155799, #159957);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.favourite {
+  color: var(--fireBush);
+  animation: animate-click 0.2s ease-in 2 alternate running;
+}
+
+.no-results {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.progress {
+  margin: auto;
+}
+
+@keyframes animate-click {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 1100px) {
+  .course-img {
+    width: 3.5in;
+  }
+}
+
+@media (max-width: 700px) {
+  .course-img {
+    display: none;
+  }
+}

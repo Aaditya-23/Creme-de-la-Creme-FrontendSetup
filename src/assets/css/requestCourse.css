@@ -1,0 +1,127 @@
+.requestCourse {
+  display: flex;
+  flex-direction: column;
+  gap: 1cm;
+}
+
+.course-form {
+  align-self: center;
+  width: 75vw;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5cm;
+}
+
+.common-3 {
+  color: white;
+  width: 25vw;
+  min-width: 3in;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2cm;
+  font-size: 1.1rem;
+}
+
+.common-3 input {
+  width: calc(100% - 10px);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  height: 1cm;
+  border-radius: 5px;
+}
+
+.common-3 input::placeholder {
+  color: grey;
+}
+
+.multipart-input {
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.multipart-input input {
+  display: none;
+}
+
+.common-3 select {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: none;
+  height: 1.2cm;
+  border-radius: 5px;
+}
+
+.common-3 option {
+  color: black;
+}
+
+.txt-ar {
+  width: 50vw;
+}
+
+.txt-ar textarea {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  height: 1in;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.txt-ar textarea::placeholder {
+  color: grey;
+}
+
+.common-3 textarea:focus {
+  outline: none;
+}
+
+.common-3 input:focus {
+  outline: none;
+}
+
+.common-3 select:focus {
+  outline: none;
+}
+
+.courseform-submit {
+  align-self: center;
+  background-color: #15955b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1cm;
+}
+
+@media (max-width: 300px) {
+  .course-form {
+    width: 100vw;
+  }
+
+  .common-3 {
+    min-width: 2.5in;
+  }
+
+  .common-3 input {
+    height: 0.7cm;
+  }
+
+  .common-3 select {
+    height: 1cm;
+  }
+
+  .txt-ar textarea {
+    height: 0.8in;
+  }
+}

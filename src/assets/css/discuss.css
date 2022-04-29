@@ -1,0 +1,174 @@
+.discuss {
+  color: white;
+  padding: 0 0.5cm;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5cm;
+}
+
+.caption {
+  font-size: 2rem;
+  margin-left: 1cm;
+}
+
+.write-comment {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5cm;
+}
+
+.comment-content {
+  flex-grow: 1;
+  height: 1in;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  resize: none;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  overflow-y: scroll;
+}
+
+.comment-content::-webkit-scrollbar {
+  display: none;
+}
+
+.comment-content::placeholder {
+  color: silver;
+}
+
+.comment-content:focus {
+  outline: none;
+}
+
+.write-comment .post-comment {
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  background-color: #155997;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.heading-separator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading-separator::before {
+  content: "";
+  height: 4px;
+  flex-grow: 1;
+  background: linear-gradient(to right, transparent, rgb(117, 8, 117));
+}
+
+.heading-separator::after {
+  content: "";
+  height: 4px;
+  flex-grow: 1;
+  background: linear-gradient(to left, transparent, rgb(117, 8, 117));
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4cm;
+}
+
+.parent {
+  display: flex;
+  gap: 0.2cm;
+}
+
+.avatar-separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-separator {
+  background-color: purple;
+  flex-grow: 1;
+  width: 1.5px;
+  border-radius: 10px;
+}
+
+.comment-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1cm;
+}
+
+.message {
+  margin-bottom: 0.3cm;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.message .material-icons {
+  font-size: 16px;
+  color: black;
+}
+
+.reply {
+  margin: 0 0 0.5cm 0.4cm;
+  display: flex;
+  gap: 10px;
+}
+
+.reply-icon {
+  cursor: pointer;
+}
+
+.respondent {
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-message {
+  margin-top: 10px;
+}
+
+.time-lapsed {
+  color: silver;
+  font-size: 0.7rem;
+  margin-left: 1px;
+}
+
+.parentName,
+.respondentName {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+.write-reply {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5cm;
+}
+
+.write-reply .post-comment {
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  background-color: #155997;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
